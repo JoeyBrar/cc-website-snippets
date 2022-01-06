@@ -1,0 +1,58 @@
+@font-face {
+    font-family: f;
+    src: url(./fonts/Poppins-ExtraLight.ttf);
+    font-family: hindi;
+
+    src: url(./fonts/NotoSansTC-Thin.otf);
+    font-family: chinese;
+
+    src: url(./fonts/ZenMaruGothic-Light.ttf);
+    font-family: others;
+}
+
+#recieved {
+    font-family: others, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#english {
+    font-family: others !important;
+    font-weight: 100 !important;
+    font-style: normal !important;
+}
+
+#russian {
+    font-family: others !important;
+    font-weight: 100 !important;
+    font-style: normal !important;
+}
+
+#japenese {
+    font-family: others !important;
+    font-weight: 100 !important;
+    font-style: normal !important;
+}
+
+#chinese {
+    font-family: chinese !important;
+    font-weight: 100 !important;
+    font-style: normal !important;
+}
+
+#hindi {
+    font-family: hindi !important;
+    font-weight: 100 !important;
+    font-style: normal !important;
+}
+
+body {
+    background-image: url("./pictures/CoffeeMountain.png")
+}
+
+hr {
+    height: 1px;
+    width: 1000px;
+    background-color: #000;
+    border: none;
+}

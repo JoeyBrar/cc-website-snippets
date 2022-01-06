@@ -1,0 +1,94 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Source+Code+Pro:wght@300&display=swap'
+            );
+
+:root {
+    --textColor: coral;
+    --linkColor: rgb(55, 62, 129);
+    --red: #f44336;
+    --white: #FFFFFF;
+}
+
+.button {
+    display: inline-block;
+    font-size: 30px;
+    background-color: var(--white);
+    border: 3px solid var(--red);
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+
+.button:hover {
+    background-color: var(--red);
+    color: var(--white);
+    padding-right: 40px;
+}
+
+.button::after {
+    content: "\00bb";
+    position: absolute;
+    right: 2px;
+    opacity: 0;
+}
+
+.button:hover::after {
+    opacity: 1;
+    margin: 0 10px 0 0;
+}
+
+.button:hover span::after {
+   margin: 0 20px 0 10px;
+}
+
+button {
+    position: relative;
+    inset: 100px 0 0 0;
+    padding: 20px;
+}
+
+body {
+    text-align: center;
+    position: center;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 50px;
+    position: relative;
+    inset: 100px 0 0 0; 
+}
+
+p {
+    font-family: 'Cairo', sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    inset: 500px 0 0 0;
+}
+
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--linkColor);
+}
+
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--linkColor);
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--textColor);
+    
+}
+
+a:active {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--textColor);
+}

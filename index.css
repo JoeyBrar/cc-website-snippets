@@ -1,0 +1,107 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Source+Code+Pro:wght@300&display=swap'
+            );
+
+:root {
+    --color1: black;
+    --color2: coral;
+    --color3: white;
+    --linkColor: rgb(55, 62, 129);
+}
+
+body {
+    /* background:  linear-gradient(100deg, #CCFFFF, #FFCCCC); */
+    background: var(--color3);
+}
+
+#greetings {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 50px;
+    position: relative;
+    inset: 150px 0 0 0;
+    width: max-content;
+}       
+
+h1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    /* background:  linear-gradient(100deg, #CCFFFF, #FFCCCC); */
+    background: var(--color3);
+    animation: type 3000ms steps(30, end) 500ms forwards;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 0.05em;
+    background: var(--linkColor);
+    animation: type 3000ms steps(30, end) 500ms forwards, blink 800ms linear infinite;
+}
+ 
+/*h1::after:hover {
+    background: var(--color2);
+} */
+
+@keyframes type {
+    from {left: 0;}
+    to {left: 100%;}
+}
+
+@keyframes blink {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@media (max-width: 918px) {
+    /* make typewriter animation not work for smaller screens */
+}
+
+p {
+    font-family: 'Cairo', sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    inset: 4em 0 0 0;
+    color: var(--color2);
+}
+
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--linkColor);
+}
+
+a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--linkColor);
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color2);
+    
+}
+
+a:active {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--color2);
+}
+
+#log-in {
+    position: absolute;
+    inset: 30em 0 0 0;
+    font-size: 25px;
+    color: var(--linkColor);
+}
