@@ -17,6 +17,8 @@
     border-radius: 8px;
     cursor: pointer;
     transition-duration: 500ms;
+    cursor: not-allowed;
+
 }
 
 
